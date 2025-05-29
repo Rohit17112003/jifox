@@ -88,7 +88,7 @@ const NavigationBar = () => {
               <a href="https://discover-8edl.vercel.app">DISCOVER</a>
             </li>
           </ul>
-          <ul className="flex items-center md:gap-5 gap-9 text-[#fff]">
+          <ul className="flex items-center md:gap-5 gap-5 text-[#fff]">
             <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
               <Link href="/Login">LOGIN/REGISTER</Link>
             </li>
