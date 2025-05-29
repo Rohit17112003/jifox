@@ -54,37 +54,40 @@ const NavigationBar = () => {
               <span className="text-[1.1rem] ">
               <HiBars3/>
               </span>
-              <Link href="/">BROWSE CATEGORIES</Link>
+              <Link href="/Browes">BROWSE CATEGORIES</Link>
               <span className="text-[1.1rem] ml-2">
                 <IoIosArrowDown />
               </span>
             </li>
 
             <li className="py-[13.2px] hover:bg-[#f6f6f620] md:px-5 md:-ml-7">
-              <Link href="/Products">HOME</Link>
+              <Link href="/">HOME</Link>
             </li>
 
             <li className="hidden md:flex items-center gap-2 py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10">
-              <Link href="/Blog ">SHOPE </Link>
+              <Link href="/Shope">SHOPE </Link>
               <span className="text-[1.1rem]">
                 <IoIosArrowDown />
               </span>
             </li>
 
             <li className="hidden md:flex items-center gap-2 py-[13.2px]  hover:bg-[#f6f6f620] px-5 md:-ml-10">
-              <Link href="/Shop">BLOG</Link>
+              <Link href="/Blog">BLOG</Link>
               <span className="text-[1.1rem]">
                 <IoIosArrowDown />
               </span>
             </li>
 
-            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5">
-              <Link href="/Contact ">CONTACT US</Link>
+            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 hidden md:block">
+              <Link href="/Contact">CONTACT US</Link>
+            </li>
+            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 md:hidden block">
+              <a href="http://hektoecommerce.vercel.app">HEKTO</a>
             </li>
           </ul>
           <ul className="flex items-center md:gap-5 gap-9 text-[#fff]">
             <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
-              <Link href="/Blog ">LOGIN/REGISTER</Link>
+              <Link href="/Login">LOGIN/REGISTER</Link>
             </li>
 
             <li className="hidden md:block">
@@ -92,11 +95,11 @@ const NavigationBar = () => {
             </li>
 
             <li className=" md:hidden block ">
-              <Link href="/Shop">LOGIN</Link>
+              <Link href="/Login">LOGIN</Link>
             </li>
 
             <li className=" md:hidden block">
-              <Link href="/Contact ">REGISTER</Link>
+              <Link href="/Register ">REGISTER</Link>
             </li>
           </ul>
         </div>
