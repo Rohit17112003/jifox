@@ -49,10 +49,10 @@ const NavigationBar = () => {
         </div>
 
         <div className="flex justify-between items-center  text-[12.5px] md:px-36 px-4 ">
-          <ul className="flex items-center gap-10 text-[#fff]">
+          <ul className="flex items-center md:gap-10 gap-3 text-[#fff]">
             <li className="hidden md:flex items-center gap-2 py-[13.2px] pl-4 pr-3.5 bg-[#f6f6f620]">
               <span className="text-[1.1rem] ">
-              <HiBars3/>
+                <HiBars3 />
               </span>
               <Link href="/Browes">BROWSE CATEGORIES</Link>
               <span className="text-[1.1rem] ml-2">
@@ -81,8 +81,11 @@ const NavigationBar = () => {
             <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 hidden md:block">
               <Link href="/Contact">CONTACT US</Link>
             </li>
-            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 md:hidden block">
+            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-3 md:hidden block">
               <a href="http://hektoecommerce.vercel.app">HEKTO</a>
+            </li>
+            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 -ml-7 md:hidden block">
+              <a href="https://discover-8edl.vercel.app">DISCOVER</a>
             </li>
           </ul>
           <ul className="flex items-center md:gap-5 gap-9 text-[#fff]">
@@ -91,7 +94,7 @@ const NavigationBar = () => {
             </li>
 
             <li className="hidden md:block">
-            <img src="../home/cart.svg " alt="cart" className="h-6.5"/>
+              <img src="../home/cart.svg " alt="cart" className="h-6.5" />
             </li>
 
             <li className=" md:hidden block ">
