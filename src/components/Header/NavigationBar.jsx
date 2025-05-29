@@ -71,19 +71,19 @@ const NavigationBar = () => {
               </span>
             </li>
 
-            <li className="hidden md:flex items-center gap-2 py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10">
+            <li className="hidden md:flex items-center gap-2 py-[13.2px]  hover:bg-[#f6f6f620] px-5 md:-ml-10">
               <Link href="/Shop">BLOG</Link>
               <span className="text-[1.1rem]">
                 <IoIosArrowDown />
               </span>
             </li>
 
-            <li className="py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-12 -ml-2">
+            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5">
               <Link href="/Contact ">CONTACT US</Link>
             </li>
           </ul>
-          <ul className="flex items-center gap-10 text-[#fff]">
-            <li className="hidden md:block py-[13.2px] hover:bg-[#f6f6f620] px-5 ">
+          <ul className="flex items-center md:gap-5 gap-9 text-[#fff]">
+            <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
               <Link href="/Blog ">LOGIN/REGISTER</Link>
             </li>
 
@@ -91,7 +91,7 @@ const NavigationBar = () => {
             <img src="../home/cart.svg " alt="cart" className="h-6.5"/>
             </li>
 
-            <li className=" md:hidden block">
+            <li className=" md:hidden block ">
               <Link href="/Shop">LOGIN</Link>
             </li>
 

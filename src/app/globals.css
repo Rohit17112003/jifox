@@ -10,7 +10,8 @@
 }
 
 .font_Architects_Daughter{
-  font-family: Architects Daughter;
+   font-family: 'Architects Daughter', cursive;
+   font-weight: 300; 
 }
 
 .font_Arial{
