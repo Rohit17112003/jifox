@@ -1,9 +1,23 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Inter } from "next/font/google";
+import { Amarante } from 'next/font/google';
+
 import "./globals.css";
+import NavigationBar from "@/components/Header/NavigationBar";
+import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const amarante = Amarante({
+  subsets: ['latin'],
+  weight: '400', // Only one weight available
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: '400', // Amarante has only 400
 });
 
 const geistMono = Geist_Mono({
@@ -20,9 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={inter.className}
       >
+        <NavigationBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

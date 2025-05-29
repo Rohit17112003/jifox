@@ -5,6 +5,18 @@
   --foreground: #171717;
 }
 
+.font_amarante{
+    font-family:Amarante;
+}
+
+.font_Architects_Daughter{
+  font-family: Architects Daughter;
+}
+
+.font_Arial{
+  font-family: Arial;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
