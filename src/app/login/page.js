@@ -14,19 +14,19 @@ const page = () => {
         {/* Right login section */}
         <div className="w-full md:w-1/2 flex items-center justify-center  px-4 md:pr-36 md:pl-28 md:-mt-28 mt-8">
           <div className="max-w-md w-full">
-            <h2 className="text-[1.8rem] font-semibold mb-6 text-center">
+            <h2 className="text-[1.8rem] font-semibold mb-6 text-center text-black">
               Log In
             </h2>
-            <form className="space-y-4">
+            <form className="space-y-4 ">
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171]  rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171]  text-[#717171] rounded-md focus:outline-none "
               />
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] text-[#717171] rounded-md focus:outline-none "
               />
               <div className="text-start md:-mt-2">
                 <a href="#" className="text-[#0E5CDD] text-[0.95rem]">
@@ -53,11 +53,15 @@ const page = () => {
                 <img src="../login/google.svg" alt="google" className="h-8" />
               </button>
               <button className="text-white  p-2 rounded-full">
-                <img src="../login/facebook.svg" alt="facebook" className="h-8" />
+                <img
+                  src="../login/facebook.svg"
+                  alt="facebook"
+                  className="h-8"
+                />
               </button>
             </div>
 
-            <div className="text-center text-[0.95rem] md:mt-10 mt-6 font-normal">
+            <div className="text-center text-[0.95rem] md:mt-10 mt-6 font-normal text-black">
               New To Jifox?{" "}
               <a href="/register" className="text-[#0E5CDD] font-normal ml-2">
                 Create An Account
@@ -65,7 +69,7 @@ const page = () => {
             </div>
 
             <p className="md:text-[0.7rem] text-[0.8rem] text-center md:mt-4 mt-2 text-black pt-4">
-             By Blicking Register Now You Agree To   
+              By Blicking Register Now You Agree To
               <a href="#" className="text-[#0E5CDD] ml-1">
                 Terms& conditions
               </a>{" "}
@@ -73,7 +77,6 @@ const page = () => {
               <a href="#" className="text-[#0E5CDD]">
                 Privacy Policy.
               </a>
-             
             </p>
           </div>
         </div>

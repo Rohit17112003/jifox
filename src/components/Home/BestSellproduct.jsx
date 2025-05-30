@@ -5,56 +5,56 @@ const BestSellProduct = () => {
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "1",
     },
     {
       image: "../home/Rectangle 46 (1).svg",
       title: "Surfauxion",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "2",
     },
     {
       image: "../home/Rectangle 46 (2).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "3",
     },
     {
       image: "../home/Rectangle 46 (3).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "4",
     },
     {
       image: "../home/Rectangle 46 (4).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "5",
     },
     {
       image: "../home/Rectangle 46 (5).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "6",
     },
     {
       image: "../home/Rectangle 46 (6).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "7",
     },
     {
       image: "../home/Rectangle 46 (7).svg",
       title: "SaberAli",
       name: "Top esssential Trends in 2021",
       desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
-      url: "",
+      id: "8",
     },
   ];
   const design = (
@@ -88,22 +88,23 @@ const BestSellProduct = () => {
         </div>
 
         <div className="grid md:grid-cols-4 grid-cols-1 px-4 md:px-36 py-5 gap-7">
-          {productList.map((data) => (
-            <div>
-              <img src={data.image} alt="cart" className="w-full h-full" />
+          {productList.map((items) => (
+            <div key={items.id || index}>
+              <img src={items.image} alt="cart" className="w-full h-full" />
             </div>
           ))}
         </div>
 
-           <div className="flex justify-center py-10">
-        <button className=" border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white">
-          Load More
-        </button>
-
+        <div className="flex justify-center py-10">
+          <a href="/browsecategories" className=" border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white">
+            Load More
+          </a>
+        </div>
+        <div className="px-4 md:px-36 pb-10">
+          {" "}
+          <hr></hr>
+        </div>
       </div>
-     <div className="px-4 md:px-36 pb-10"> <hr ></hr></div>
-      </div>
-   
     </>
   );
   return design;

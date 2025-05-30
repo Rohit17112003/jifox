@@ -14,29 +14,29 @@ const page = () => {
         {/* Right login section */}
         <div className="w-full md:w-1/2 flex items-center justify-center  px-4 md:pr-36 md:pl-28 md:-mt-9 mt-8">
           <div className="max-w-md w-full">
-            <h2 className="text-[1.8rem] font-semibold mb-6 text-center tracking-wide">
+            <h2 className="text-[1.8rem] font-semibold mb-6 text-center tracking-wide text-black">
               Create Account
             </h2>
             <form className="space-y-4">
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171]  rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] text-[#717171]  rounded-md focus:outline-none "
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171]  rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] text-[#717171]  rounded-md focus:outline-none "
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171]  rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] text-[#717171]  rounded-md focus:outline-none "
               />
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] rounded-md focus:outline-none "
+                className="w-full text-[0.7rem] font-stretch-50% p-2.5 border border-[#717171] text-[#717171] rounded-md focus:outline-none "
               />
 
               <button
@@ -47,7 +47,7 @@ const page = () => {
               </button>
             </form>
 
-            <div className="text-center text-[0.95rem] md:mt-10 mt-6 font-normal">
+            <div className="text-center text-[0.95rem] md:mt-10 mt-6 font-normal text-black">
               Already Have An Account?{" "}
               <a href="/login" className="text-[#0E5CDD] font-normal ml-2">
                 Log In

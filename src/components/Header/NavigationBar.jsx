@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
-import { LiaBarsSolid } from "react-icons/lia";
+// import { LiaBarsSolid } from "react-icons/lia";
 import { HiBars3 } from "react-icons/hi2";
 const NavigationBar = () => {
   const [show, setShow] = useState(false);
@@ -54,7 +54,7 @@ const NavigationBar = () => {
               <span className="text-[1.2rem] text-white ">
                 <HiBars3 />
               </span>
-              <Link href="/Browes">BROWSE CATEGORIES</Link>
+              <Link href="/browsecategories">BROWSE CATEGORIES</Link>
               <span className="text-[1.1rem] ml-2">
                 <IoIosArrowDown />
               </span>
