@@ -16,7 +16,7 @@ const Hero2 = () => {
   const design = (
     <>
       <div>
-        <div className="grid md:grid-cols-3 grid-cols-1 px-4 md:px-36 py-14 gap-7">
+        <div className="grid md:grid-cols-3 grid-cols-3 px-4 md:px-36 py-14 md:gap-7 gap-4">
           {product.map((items) => (
             <div key={items.id || index}>
               <img src={items.img} alt="cart" className="w-full h-full" />

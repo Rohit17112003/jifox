@@ -87,7 +87,7 @@ const BestSellProduct = () => {
           </button>
         </div>
 
-        <div className="grid md:grid-cols-4 grid-cols-1 px-4 md:px-36 py-5 gap-7">
+        <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-36 py-5 md:gap-7 gap-4">
           {productList.map((items) => (
             <div key={items.id || index}>
               <img src={items.image} alt="cart" className="w-full h-full" />
