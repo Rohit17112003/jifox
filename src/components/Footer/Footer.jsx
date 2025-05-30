@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <div className=" w-full  bg-[#000] px-4 md:px-36  pb-10 overflow-x-hidden">
-        <div className=" grid grid-flow-row grid-cols-1 sm:grid-cols-6 gap-5 md:gap-8 mt-10 pt-0.5">
-          <div className="text-[#fff] flex flex-col gap-5.5 md:text-[0.91rem] text-[1.1rem] md:col-span-2">
+        <div className=" grid grid-flow-row grid-cols-2 sm:grid-cols-6 gap-2 md:gap-8 mt-10 pt-0.5">
+          <div className="text-[#fff] flex flex-col gap-5.5 md:text-[0.91rem] text-[1.1rem] col-span-2">
             <h1 className="cursor-pointer md:text-[1.1rem] text-[1.4rem]">
               About Shop
             </h1>
