@@ -51,7 +51,7 @@ const NavigationBar = () => {
         <div className="flex justify-between  items-center  text-[12.5px] md:px-36 px-4 ">
           <ul className="flex items-center md:gap-10 gap-5 text-[#fff]">
             <li className="hidden md:flex items-center gap-2 py-[13.2px] md:pl-4 md:pr-3.5 bg-[#f6f6f620]">
-              <span className="text-[1.1rem] ">
+              <span className="text-[1.2rem] text-white ">
                 <HiBars3 />
               </span>
               <Link href="/Browes">BROWSE CATEGORIES</Link>
@@ -90,7 +90,7 @@ const NavigationBar = () => {
           </ul>
           <ul className="flex items-center md:gap-5 gap-5 text-[#fff]">
             <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
-              <Link href="/Login">LOGIN/REGISTER</Link>
+              <Link href="/login">LOGIN/REGISTER</Link>
             </li>
 
             <li className="hidden md:block">
@@ -98,11 +98,11 @@ const NavigationBar = () => {
             </li>
 
             <li className=" md:hidden block ">
-              <Link href="/Login">LOGIN</Link>
+              <Link href="/login">LOGIN</Link>
             </li>
 
             <li className=" md:hidden block">
-              <Link href="/Register ">REGISTER</Link>
+              <Link href="/register ">REGISTER</Link>
             </li>
           </ul>
         </div>

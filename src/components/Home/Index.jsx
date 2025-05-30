@@ -1,10 +1,16 @@
 import Hero from "./Hero";
 import Hero2 from "./Hero2";
+import BestSellProduct from "./BestSellproduct";
+import Instagram from "./Instagram";
 const MainHomePage = () => {
   const design = (
     <>
-      <Hero />
-      <Hero2 />
+      <div>
+        <Hero />
+        <Hero2 />
+        <BestSellProduct />
+        <Instagram />
+      </div>
     </>
   );
   return design;

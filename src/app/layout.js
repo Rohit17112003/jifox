@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono,Inter } from "next/font/google";
-import { Amarante } from 'next/font/google';
+import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Amarante } from "next/font/google";
 
 import "./globals.css";
 import NavigationBar from "@/components/Header/NavigationBar";
@@ -11,13 +11,13 @@ const geistSans = Geist({
 });
 
 const amarante = Amarante({
-  subsets: ['latin'],
-  weight: '400', // Only one weight available
+  subsets: ["latin"],
+  weight: "400", // Only one weight available
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: '400', // Amarante has only 400
+  subsets: ["latin"],
+  weight: "400", // Amarante has only 400
 });
 
 const geistMono = Geist_Mono({
@@ -33,10 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-      className={inter.className}
-     
-      >
+      <body className={inter.className}>
         <NavigationBar />
         {children}
         <Footer />
