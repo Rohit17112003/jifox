@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
-// import { LiaBarsSolid } from "react-icons/lia";
-import { HiBars3 } from "react-icons/hi2";
+import { FaBars } from "react-icons/fa6";
 const NavigationBar = () => {
   const [show, setShow] = useState(false);
   const [iseMenu, setIsMenu] = useState(false);
@@ -13,9 +12,12 @@ const NavigationBar = () => {
     <>
       <div className="w-full  bg-[#000]  sticky top-0  justify-between z-40 overflow-x-hidden ">
         <div className="bg-[#fff] w-full flex justify-between items-center  md:px-36 px-4 py-2.5">
-          <h1 className="text-[#000]  font-[500] font_amarante text-[22px] md:-mt-1">
-            JIFOX
-          </h1>
+          <Link href="/">
+            <h1 className="text-[#000]  font-[500] font_amarante text-[22px] md:-mt-1">
+              {" "}
+              JIFOX{" "}
+            </h1>
+          </Link>
 
           <div className="flex justify-center items-center bg-[#f6f6f6] rounded-md text-[0.94rem] font_Arial">
             <p
@@ -50,37 +52,41 @@ const NavigationBar = () => {
 
         <div className="flex justify-between  items-center  text-[12.5px] md:px-36 px-4 ">
           <ul className="flex items-center md:gap-10 gap-5 text-[#fff]">
-            <li className="hidden md:flex items-center gap-2 py-[13.2px] md:pl-4 md:pr-3.5 bg-[#f6f6f620]">
-              <span className="text-[1.2rem] text-white ">
-                <HiBars3 />
-              </span>
-              <Link href="/browsecategories">BROWSE CATEGORIES</Link>
-              <span className="text-[1.1rem] ml-2">
-                <IoIosArrowDown />
-              </span>
-            </li>
-
-            <li className="py-[13.2px] hover:bg-[#f6f6f620] md:px-5 md:-ml-7">
-              <Link href="/">HOME</Link>
-            </li>
-
-            <li className="hidden md:flex items-center gap-2 py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10">
-              <Link href="/Shope">SHOPE </Link>
-              <span className="text-[1.1rem]">
-                <IoIosArrowDown />
-              </span>
-            </li>
-
+            <Link href="/browsecategories">
+              <li className="hidden md:flex items-center gap-2 py-[13.2px] md:pl-4 md:pr-3.5 bg-[#f6f6f620]">
+                <span className=" text-[0.9rem] text-white -mt-0.5 font-normal">
+                  <FaBars />
+                </span>
+                BROWSE CATEGORIES
+                <span className="text-[1.1rem] ml-2">
+                  <IoIosArrowDown />
+                </span>
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="py-[13.2px] hover:bg-[#f6f6f620] md:px-5 md:-ml-7 -ml-5">
+                HOME
+              </li>
+            </Link>
+            <Link href="/Shope">
+              <li className="hidden md:flex items-center gap-2 py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10">
+                SHOPE
+                <span className="text-[1.1rem]">
+                  <IoIosArrowDown />
+                </span>
+              </li>
+            </Link>
             <li className="hidden md:flex items-center gap-2 py-[13.2px]  hover:bg-[#f6f6f620] px-5 md:-ml-10">
               <Link href="/Blog">BLOG</Link>
               <span className="text-[1.1rem]">
                 <IoIosArrowDown />
               </span>
             </li>
-
-            <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 hidden md:block">
-              <Link href="/Contact">CONTACT US</Link>
-            </li>
+            <Link href="/Contact">
+              <li className=" py-[13.2px] hover:bg-[#f6f6f620] px-5 md:-ml-10 -ml-5 hidden md:block">
+                CONTACT US
+              </li>
+            </Link>
             <li className=" py-[13.2px] hover:bg-[#f6f6f620]  md:hidden block">
               <a href="http://hektoecommerce.vercel.app">HEKTO</a>
             </li>
@@ -89,20 +95,17 @@ const NavigationBar = () => {
             </li>
           </ul>
           <ul className="flex items-center md:gap-5 gap-5 text-[#fff]">
-            <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
-              <Link href="/login">LOGIN/REGISTER</Link>
-            </li>
-
+            <Link href="/login">
+              <li className="hidden md:block  py-[13.2px] hover:bg-[#f6f6f620] px-5">
+                LOGIN/REGISTER
+              </li>
+            </Link>
             <li className="hidden md:block">
               <img src="../home/cart.svg " alt="cart" className="h-6.5" />
             </li>
 
             <li className=" md:hidden block ">
               <Link href="/login">LOGIN</Link>
-            </li>
-
-            <li className=" md:hidden block">
-              <Link href="/register ">REGISTER</Link>
             </li>
           </ul>
         </div>

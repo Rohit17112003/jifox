@@ -60,10 +60,10 @@ const BestSellProduct = () => {
   const design = (
     <>
       <div>
-        <h1 className="text-center px-4 md:px-36 text-4xl">
+        <h1 className="text-center px-4 md:px-36 text-[2.2rem] font-bold text-black">
           Best Sell Product
         </h1>
-        <div className="md:flex hidden justify-between px-4 md:px-36 py-7 text-[1.1rem] ">
+        <div className="md:flex hidden justify-between px-4 md:px-36 py-6 text-[1.1rem] ">
           <button className="bg-[#000] text-[#fff] py-1.5 px-6  rounded-md">
             All
           </button>
@@ -87,7 +87,7 @@ const BestSellProduct = () => {
           </button>
         </div>
 
-        <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-36 py-5 md:gap-7 gap-4">
+        <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-36 py-5.5 md:gap-7 gap-4">
           {productList.map((items) => (
             <div key={items.id || index}>
               <img src={items.image} alt="cart" className="w-full h-full" />
@@ -96,7 +96,7 @@ const BestSellProduct = () => {
         </div>
 
         <div className="flex justify-center py-10">
-          <a href="/browsecategories" className=" border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white">
+          <a href="/browsecategories" className=" border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white text-black">
             Load More
           </a>
         </div>

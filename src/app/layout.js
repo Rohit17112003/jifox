@@ -17,7 +17,7 @@ const amarante = Amarante({
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: "400", // Amarante has only 400
+  weight: "500", // Amarante has only 400
 });
 
 const geistMono = Geist_Mono({
@@ -34,9 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavigationBar />
-        {children}
-        <Footer />
+        <div>
+          <NavigationBar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
