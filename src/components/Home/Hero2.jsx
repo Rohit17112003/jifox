@@ -36,7 +36,7 @@ const Hero2 = () => {
                    {items.hover}
                   </h2>
                   <button className=" text-black px-5 py-2 rounded-md hover:text-white hover:bg-black border border-black">
-                  <a href="/"> View Collection</a>
+                  <a href="/browsecategories"> View Collection</a>
                   </button>
                 </div>
               </div>
