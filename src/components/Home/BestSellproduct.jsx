@@ -132,8 +132,8 @@ const BestSellProduct = () => {
                   </span>
                 </h2>
 
-                <div className="absolute inset-0  bg-opacity-50 opacity-100 transition duration-300  bg-white rounded-full h-8.5 w-8.5 flex justify-center items-center md:ml-46 ml-34 mt-3  active:bg-red-700">
-                  <span className="text-[1.3rem] cursor-pointer">
+                <div className="absolute inset-0  bg-opacity-50 opacity-100 transition duration-300  bg-white rounded-full h-8.5 w-8.5 flex justify-center items-center md:ml-46 sm:ml-35 mt-3 ml-28  active:bg-red-700">
+                  <span className="text-[1.3rem] cursor-pointer text-black">
                     <PiHeartStraight />
                   </span>
                 </div>
