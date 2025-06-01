@@ -1,4 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -7,6 +10,8 @@
 
 .font_amarante{
     font-family:Amarante;
+     font-weight: 400;
+  font-style: normal;
 }
 
 .font_Architects_Daughter{
