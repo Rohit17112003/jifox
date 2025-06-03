@@ -1,16 +1,9 @@
+import { FaPlus } from "react-icons/fa6";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { PiHeartStraight } from "react-icons/pi";
-const BestSellProduct = () => {
+
+const Browsercategories = () => {
   const productList = [
-    {
-      image: "../home/Rectangle 46.svg",
-      rating: "../home/rating.svg",
-      name: "Louis Philippe",
-      desc: "Lightly Washed Slim Fit Jeans",
-      price: "Rs. 999",
-      reprice: "Rs. 1999",
-      id: "1",
-    },
     {
       image: "../home/Rectangle 46 (1).svg",
       rating: "../home/rating.svg",
@@ -28,15 +21,6 @@ const BestSellProduct = () => {
       price: "Rs. 999",
       reprice: "Rs. 1999",
       id: "3",
-    },
-    {
-      image: "../home/Rectangle 46 (3).svg",
-      rating: "../home/rating.svg",
-      name: "Louis Philippe",
-      desc: "Lightly Washed Slim Fit Jeans",
-      price: "Rs. 999",
-      reprice: "Rs. 1999",
-      id: "4",
     },
     {
       image: "../home/Rectangle 46 (4).svg",
@@ -77,35 +61,49 @@ const BestSellProduct = () => {
   ];
   const design = (
     <>
-      <div>
-        <h1 className="text-center px-4 md:px-36 text-[2.2rem] text-2xl font-bold text-black">
-          Best Sell Product
-        </h1>
-        <div className="md:flex hidden justify-between px-4 md:px-36 py-6 text-[1.1rem] ">
-          <button className="bg-[#000] text-[#fff] py-1.5 px-6  rounded-md">
-            All
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            Casual Shirts
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            Formal Shirts
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            T-Shirts
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            Pants
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            Jeans
-          </button>
-          <button className="text-[#000] py-1.5 px-6 hover:text-white hover:bg-black rounded-md outline-1 shadow-sm shadow-gray-300">
-            Hoodie
-          </button>
+      <div className="grid md:grid-cols-4 grid-cols-3 px-4 md:px-36 pt-10 md:gap-9.5 gap-5 items-center">
+        <div className="col-span-1 flex flex-col gap-4 text-[0.9rem]">
+          <h1 className="text-[1.85rem] text-black font-semibold">Filters</h1>
         </div>
+        <div className="md:col-span-3 col-span-2 grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3 py-1 md:py-0">
+          <h1 className="text-[1.4rem] text-black font-semibold">Pants</h1>
+        </div>
+      </div>
 
-        <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-36 py-5.5 md:gap-7 gap-4">
+      <div className="grid md:grid-cols-4 grid-cols-2 px-4 md:px-36 md:gap-9.5 gap-5 pt-4  ">
+        <div className="col-span-1 md:flex hidden flex-col gap-4 text-[0.9rem] ">
+          <div className="flex justify-between items-center text-white bg-[#222222] md:px-4 px-2 py-2.5">
+            <p>Sort By</p>
+            <span>
+              <FaPlus />
+            </span>
+          </div>
+          <div className="flex justify-between items-center text-white bg-[#222222] md:px-4 px-2 py-2.5">
+            <p>Size</p>
+            <span>
+              <FaPlus />
+            </span>
+          </div>
+          <div className="flex justify-between items-center text-white bg-[#222222] md:px-4 px-2 py-2.5">
+            <p>Color</p>
+            <span>
+              <FaPlus />
+            </span>
+          </div>
+          <div className="flex justify-between items-center text-white bg-[#222222] md:px-4 px-2 py-2.5">
+            <p>Collection</p>
+            <span>
+              <FaPlus />
+            </span>
+          </div>
+          <div className="flex justify-between items-center text-white bg-[#222222] md:px-4 px-2 py-2.5">
+            <p>Febric</p>
+            <span>
+              <FaPlus />
+            </span>
+          </div>
+        </div>
+        <div className="md:col-span-3 col-span-2 grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3">
           {productList.map((items) => (
             <div key={items.id || index}>
               <div className="relative group overflow-hidden md:text-[0.9rem] text-[0.7rem]">
@@ -145,8 +143,12 @@ const BestSellProduct = () => {
                       <HiOutlineShoppingBag />
                     </span>
                   </div>
-                  <p className="text-[#717171] md:text-[0.8rem] text-[0.75rem] mt-0.5">Sizes:</p>
-                  <p className="text-[#717171] md:text-[0.8rem] text-[0.75rem] -mt-1">32</p>
+                  <p className="text-[#717171] md:text-[0.8rem] text-[0.75rem] mt-0.5">
+                    Sizes:
+                  </p>
+                  <p className="text-[#717171] md:text-[0.8rem] text-[0.75rem] -mt-1">
+                    32
+                  </p>
                   <h2 className="text-black md:text-[0.8rem] text-[0.64rem] -ml-1">
                     {items.price}{" "}
                     <span className="text-[#717171] md:text-[0.7rem] text-[0.62rem]">
@@ -165,23 +167,27 @@ const BestSellProduct = () => {
               </div>
             </div>
           ))}
-        </div>
 
-        <div className="flex justify-center py-10">
-          <a
-            href="/browsecategories"
-            className=" border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white text-black"
-          >
-            Load More
-          </a>
+          <div className="flex justify-center py-6">
+            <a
+              href="/"
+              className=" md:block hidden border border-black no-underline px-4 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white text-black"
+            >
+              Load More
+            </a>
+          </div>
         </div>
-        <div className="px-4 md:px-36 pb-10">
-          {" "}
-          <hr></hr>
-        </div>
+      </div>
+      <div className="flex justify-center pb-10 -mt-10">
+        <a
+          href="/"
+          className="md:hidden block border border-black no-underline px-3 py-1.5 rounded-md mt-2  hover:bg-black hover:text-white text-black"
+        >
+          Load More
+        </a>
       </div>
     </>
   );
   return design;
 };
-export default BestSellProduct;
+export default Browsercategories;
