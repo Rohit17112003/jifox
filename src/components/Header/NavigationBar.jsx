@@ -37,7 +37,7 @@ const NavigationBar = () => {
             ></div>
             <div>
               <div
-                className="flex items-center md:gap-10 gap-10 text-[#717171] font-[500] pr-4 md:rounded-r-md rounded-md bg-[#F6F6F6] hover:bg-[#f9cfcfb7] hover:rounded-md "
+                className="flex items-center md:gap-10 gap-5 text-[#717171] font-[500] pr-4 md:rounded-r-md rounded-md bg-[#F6F6F6] hover:bg-[#f9cfcfb7] hover:rounded-md "
                 onMouseEnter={() => setShow(true)}
                 onMouseLeave={() => setShow(false)}
               >
